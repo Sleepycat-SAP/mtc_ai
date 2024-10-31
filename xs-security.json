@@ -1,0 +1,9 @@
+{
+    "xsappname" : "myapp",
+    "tenant-mode" : "dedicated",
+    "oauth2-configuration": {
+      "redirect-uris": [
+          "https://*.hackathon.cn40.apps.platform.sapcloud.cn/**"
+        ]
+      }
+  }

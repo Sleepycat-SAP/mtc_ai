@@ -1,0 +1,14 @@
+---
+applications:
+- name: myapp
+  memory: 256MB
+  disk_quota: 1GB
+  random-route: true
+  # routes:
+  #   - route: genaiappsample.hackathon.cn40.apps.platform.sapcloud.cn
+  buildpack: python_buildpack
+  command: python app.py
+  env:
+    PIP_INDEX_URL: https://pypi.tuna.tsinghua.edu.cn/simple
+  services:
+    - mtc-uaa
