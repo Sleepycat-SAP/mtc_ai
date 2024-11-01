@@ -4,7 +4,7 @@
             {
                 "credentials": {
                     "clientid": "sb-myapp!t2399",
-                    "clientsecret": "3x4GpFG3C/dEJE5nC12OppRyD5s=",
+                    "clientsecret": "",
                     "url": "https://maihuixinxisa.authentication.cn40.platform.sapcloud.cn",
                     "xsappname": "myapp!t2399"
                 }
