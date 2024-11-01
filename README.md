@@ -23,10 +23,6 @@
 cf push
 ```
 
-## 验证应用程序  
-在 SAP BTP 控制台中启动应用程序，验证 LLM 的答案是否在浏览器中显示。  
-![launch_app](./img/launch_app.png)  
-
 ## 使用 langchain 连接 Gen AI Hub 的另一种方法  
 
 除了调整大型语言模型中的参数，如 "temperature"、"top_k" 或 "max_tokens"，Gen AI Hub 还提供了各种大型语言模型供客户选择，例如 AWS Claude3 和 GCP gemini。客户可以通过简单地使用函数 **init_llm** 来利用所有这些功能。  
