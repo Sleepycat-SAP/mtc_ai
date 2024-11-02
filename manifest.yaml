@@ -1,6 +1,6 @@
 ---
 applications:
-- name: myapp
+- name: mtc_ai
   memory: 256MB
   disk_quota: 1GB
   random-route: true

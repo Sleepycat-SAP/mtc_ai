@@ -18,26 +18,14 @@
   将 config.json 定位到此文件夹：**~/.aicore/config.json**。您可以像往常一样在本地环境中运行应用程序。
 
 ## 将应用程序部署到 CF 运行时  
+安装CF Command Line：
+https://docs.cloudfoundry.org/cf-cli/install-go-cli.html#pkg
+
+
 通过 cf cli 登录到组织/空间。然后执行以下命令完成部署：  
 ```bash
 cf push
 ```
-
-## 使用 langchain 连接 Gen AI Hub 的另一种方法  
-
-除了调整大型语言模型中的参数，如 "temperature"、"top_k" 或 "max_tokens"，Gen AI Hub 还提供了各种大型语言模型供客户选择，例如 AWS Claude3 和 GCP gemini。客户可以通过简单地使用函数 **init_llm** 来利用所有这些功能。  
-* 在 manifest.yml 中将应用程序名称更新为 **mygenaiapp**  
-  `command: python mygenaiapp.py`
-* 在 mygenaiapp.py 中填写预期的模型  
-  模型名称取决于在 SAP AI Launchpad 中的设置。模型名称可以在 SAP AI Launchpad / ML Operations / Configurtions 中找到。在 SAP AI Core 中，我们提供了这些模型："gpt-4"、"gpt-4-32k" 和 "gpt-4o"  
-* 将应用程序部署到 CF 运行时  
-```bash
-cf push
-```
-
-## 引用链接  
-[从环境变量连接](https://github.com/SAP-samples/btp-gen-ai-hub-sdk-samples/blob/main/docs/notebook-samples/1-connect-to-aicore-from-env.ipynb)  
-[使用 langchain 连接 gen-ai-hub](https://github.com/SAP-samples/btp-gen-ai-hub-sdk-samples/blob/main/docs/notebook-samples/2-connect-genaihub-from-env.ipynb)
 
 
 ## 部署 ID          配置名称
