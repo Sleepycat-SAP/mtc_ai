@@ -21,6 +21,12 @@
 安装CF Command Line：
 https://docs.cloudfoundry.org/cf-cli/install-go-cli.html#pkg
 
+登录CF：
+```
+cf login
+```
+输入您的邮箱和密码
+
 
 通过 cf cli 登录到组织/空间。然后执行以下命令完成部署：  
 ```bash
