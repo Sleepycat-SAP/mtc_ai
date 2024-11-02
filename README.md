@@ -2,20 +2,7 @@
 这个 Cloud Foundry 应用程序建立了与 Generative AI Hub 的连接，发送了一个硬编码的输入消息，并显示输出消息。
 然而，为了满足生产运营需求，建议通过 Cloud Foundry 环境变量使用服务绑定凭据连接到 Generative AI Hub。
 
-## 先决条件。
 
-* 填写 **.aicore/config.json** 中的必填字段  
-  从 AI Core 服务密钥中复制相关字符串：  
-    AICORE_AUTH_URL,  
-    AICORE_CLIENT_ID,  
-    AICORE_CLIENT_SECRET,  
-    AICORE_BASE_URL
-
-* 在 app.py 中填写真实的部署 ID  
-  将字符串 "xxxxxxxx" 替换为真实的部署 ID。
-
-## 如何在本地环境中调试代码  
-  将 config.json 定位到此文件夹：**~/.aicore/config.json**。您可以像往常一样在本地环境中运行应用程序。
 
 ## 将应用程序部署到 CF 运行时  
 安装CF Command Line：
